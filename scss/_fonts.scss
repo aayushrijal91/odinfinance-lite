@@ -1,0 +1,133 @@
+/* Font sizes */
+.h1 {
+    font-size: 11.265rem; // 180.24px
+
+    @include media-breakpoint-down(lg) {
+        font-size: 140px;
+    }
+    @include media-breakpoint-down(md) {
+        font-size: 110px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 96px;
+    }
+}
+
+.h2 {
+    font-size: 9rem; // 144px
+
+    @include media-breakpoint-down(xl) {
+        font-size: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 50px;
+    }
+}
+
+.h3 {
+    font-size: 8rem; // 128px
+    
+    @include media-breakpoint-down(xl) {
+        font-size: 100px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 96px;
+    }
+}
+
+.h4 {
+    font-size: 6rem; // 96px
+    
+    @include media-breakpoint-down(xl) {
+        font-size: 80px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 48px;
+    }
+}
+
+.h5-upper {
+    font-size: 5rem; // 64px
+
+    @include media-breakpoint-down(md) {
+        font-size: 3.65rem;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 48px;
+    }
+}
+
+.h5 {
+    font-size: 4rem; // 64px
+
+    @include media-breakpoint-down(md) {
+        font-size: 3.65rem;
+    }
+}
+
+.h6 {
+    font-size: 2.5rem; // 40px
+
+    @include media-breakpoint-down(md) {
+        font-size: 30px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+    }
+}
+
+.h7 {
+    font-size: 2.25rem; // 36px
+
+    @include media-breakpoint-down(xl) {
+        font-size: 2rem;
+    }
+}
+
+.h8 {
+    font-size: 1.5rem; // 24px
+}
+
+.h9 {
+    font-size: 1rem; // 16px
+
+    @include media-breakpoint-down(sm) {
+        font-size: 0.875rem;
+    }
+}
+
+.h10 {
+    font-size: 0.875rem; // 14px
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+$font-manrope: "Manrope", sans-serif;
+$font-inter: "Inter", sans-serif;
+
+$font-body: $font-manrope;
+
+$font-families: (
+    "manrope": "Manrope",
+    "inter": "Inter",
+);
+
+@each $name, $font-family in $font-families {
+    .font-#{$name} {
+        font-family: $font-family, sans-serif;
+    }
+}
+
+$font-weights: 300, 400, 500, 600, 700, 800, 900;
+
+@each $fw in $font-weights {
+    .fw-#{$fw} {
+        font-weight: $fw;
+    }
+}
