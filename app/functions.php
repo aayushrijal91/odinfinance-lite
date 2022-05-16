@@ -19,5 +19,5 @@ function renderImg($filename, $folder, $classname = "")
         $src = "./assets/images/" . $folder . "/" . $filename_without_ext . ".webp";
     }
 
-    return "<img src=" . $src . " alt=" . $filename_without_ext . " class=" . $classname . ">";
+    return "<img src=" . $src . " alt=" . $filename_without_ext . " class='" . $classname . "'>";
 }

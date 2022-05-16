@@ -23,25 +23,6 @@
 </head>
 
 <body>
-	<div class="hero-video-sm d-xl-none">
-		<video class="w-100" id="video" autoplay muted loop playsinline>
-			<source src="./assets/video/banner-mobile.mp4" type="video/mp4">
-			<source src="./assets/video/banner-mobile.mp4" type="video/ogg">
-			Your browser does not support HTML video.
-		</video>
-		<div class="phone-number-sm">
-			<a href="tel:<?= $phone_number ?>" class="btn btn-block bordered border-white rounded-pill text-white py-2 px-4 py-md-3 px-md-5">
-				<?= $phone_number ?>
-			</a>
-		</div>
-	</div>
-	<div class="hero-video">
-		<video class="w-100" id="video" autoplay muted loop playsinline>
-			<source src="./assets/video/banner.mp4" type="video/mp4">
-			<source src="./assets/video/banner.mp4" type="video/ogg">
-			Your browser does not support HTML video.
-		</video>
-	</div>
 	<header>
 		<div class="header-top-bar">
 			<div class="container py-4">
