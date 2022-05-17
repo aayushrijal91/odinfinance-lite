@@ -3,6 +3,119 @@ include __DIR__ . '/../functions.php';
 include __DIR__ . '/header.php';
 ?>
 
+<section class="form" id="form">
+    <div class="container-fluid px-xl-0">
+        <div class="row no-gutters align-items-center">
+            <div class="col-6 d-none d-xl-block">
+                <div class="row no-gutters align-items-center">
+                    <div class="col-auto position-relative" style="z-index: 100" data-aos="fade-left">
+                        <div><?= renderImg("form.png", "lib") ?></div>
+                    </div>
+                    <div class="col text-primary-sub h3 fw-800 line-height-3 letter-spacing-1 ml-n3" data-aos="fade-right">
+                        <span class="text-primary">Enquire</span> With Us Today
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-xxl-5 pt-5 pt-xl-0 pr-xl-5 pr-xxl-0">
+                <form action="./src/form" method="POST">
+                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
+
+                    <div class="row no-gutters">
+                        <div class="col-12 h8 fw-500 pb-3 text-dark">Contact Details</div>
+                        <div class="col-12 col-md-6 pr-md-2">
+                            <input class="form-control border-0" type="text" placeholder="First Name" name="firstName" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
+                            <input class="form-control border-0" type="text" placeholder="Last Name" name="lastName" required>
+                        </div>
+                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
+                            <input class="form-control border-0" type="tel" placeholder="Contact Number" name="phone" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-3">
+                            <input class="form-control border-0" type="email" placeholder="Email Address" name="email" required>
+                        </div>
+                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
+                            <input class="form-control border-0" type="text" placeholder="Suburb" name="suburb" required>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-3 d-flex align-items-center text-grey">
+                            <div class="pl-3 pr-4">
+                                ABN
+                            </div>
+                            <div class="form-check form-check-inline px-2">
+                                <input class="form-check-input" type="radio" name="abn" id="abnYes" value="Yes" checked>
+                                <label class="form-check-label" for="abnYes">Yes</label>
+                            </div>
+                            <div class="form-check form-check-inline px-2">
+                                <input class="form-check-input" type="radio" name="abn" id="abnNo" value="No">
+                                <label class="form-check-label" for="abnNo">No</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row no-gutters pt-5">
+                        <div class="col-12 h8 fw-500 pb-3 text-dark">Financial Information</div>
+                        <div class="col-12 col-md-6 pr-md-2">
+                            <select name="employmentStatus" class="form-control border-0" required>
+                                <option disabled selected>Employment Status</option>
+                                <option>Self Employed</option>
+                                <option>Full Time</option>
+                                <option>Part Time</option>
+                                <option>Casual</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
+                            <input class="form-control border-0" type="number" placeholder="Weekly Income ($)" name="weeklyIncome" required>
+                        </div>
+                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
+                            <!-- <input class="form-control border-0" type="number" placeholder="Financial Amount Required ($)" name="amountRequired" required> -->
+                            <select name="amountRequired" class="form-control border-0" required>
+                                <option disabled selected>Financial Amount Required ($)</option>
+                                <option> $10,000-$19,000</option>
+                                <option>$20,000-$49,000</option>
+                                <option>$50,000-$74,999</option>
+                                <option>$75,000-$149,000</option>
+                                <option>$150,000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row no-gutters pt-5">
+                        <div class="col-12 h8 fw-500 pb-3 text-dark">Additional Information</div>
+                        <div class="col-12 col-md-6 pr-md-2 text-dark-grey">
+                            <div class="pb-2">What Best Suits You</div>
+                            <div class="form-check d-flex align-items-center py-2">
+                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits1" value="I have found my asset and looking for quotes" checked>
+                                <label class="form-check-label" for="bestSuits1">
+                                    I have found my asset and looking for quotes
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center py-2">
+                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits2" value="Waiting on approval before I find my asset?">
+                                <label class="form-check-label" for="bestSuits2">
+                                    Waiting on approval before I find my asset?
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center py-2">
+                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits3" value="I've Been declined and looking for options?">
+                                <label class="form-check-label" for="bestSuits3">
+                                    I've Been declined and looking for options?
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
+                            <textarea name="message" class="form-control border-0 bg-off-gray" id="message" rows="6" placeholder="Comment (Optional)"></textarea>
+                        </div>
+                        <div class="col-12 mt-2 mt-md-4 mt-md-5">
+                            <button type="submit" class="btn btn-block btn-primary text-white form-control rounded-0 h9">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+            </div>
+            </form>
+        </div>
+    </div>
+    </div>
+</section>
+
 <section class="deals">
     <div class="container">
         <div class="our-deals">
@@ -801,122 +914,16 @@ include __DIR__ . '/header.php';
     </div>
 </section>
 
-<section class="form" id="form">
-    <div class="container-fluid px-xl-0">
-        <div class="row no-gutters align-items-center">
+<section>
+    <div class="container">
+        <div class="row">
             <div class="col-12 d-xl-none">
                 <div class="text-center text-primary-sub h3 fw-800 line-height-3 letter-spacing-1" data-aos="fade-right">
                     <span class="text-primary">Enquire</span> With Us Today
                 </div>
                 <div class="text-center mt-n4 position-relative"><?= renderImg("form-mobile.png", "lib") ?></div>
             </div>
-            <div class="col-6 d-none d-xl-block">
-                <div class="row no-gutters align-items-center">
-                    <div class="col-auto position-relative" style="z-index: 100" data-aos="fade-left">
-                        <div><?= renderImg("form.png", "lib") ?></div>
-                    </div>
-                    <div class="col text-primary-sub h3 fw-800 line-height-3 letter-spacing-1 ml-n3" data-aos="fade-right">
-                        <span class="text-primary">Enquire</span> With Us Today
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-6 col-xxl-5 pt-5 pt-xl-0 pr-xl-5 pr-xxl-0">
-                <form action="./src/form" method="POST">
-                    <input type="hidden" name="token" id="recaptchaResponse" class="recaptchaResponse">
-
-                    <div class="row no-gutters">
-                        <div class="col-12 h8 fw-500 pb-3 text-dark">Contact Details</div>
-                        <div class="col-12 col-md-6 pr-md-2">
-                            <input class="form-control border-0" type="text" placeholder="First Name" name="firstName" required>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
-                            <input class="form-control border-0" type="text" placeholder="Last Name" name="lastName" required>
-                        </div>
-                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
-                            <input class="form-control border-0" type="tel" placeholder="Contact Number" name="phone" required>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-3">
-                            <input class="form-control border-0" type="email" placeholder="Email Address" name="email" required>
-                        </div>
-                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
-                            <input class="form-control border-0" type="text" placeholder="Suburb" name="suburb" required>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-3 d-flex align-items-center text-grey">
-                            <div class="pl-3 pr-4">
-                                ABN
-                            </div>
-                            <div class="form-check form-check-inline px-2">
-                                <input class="form-check-input" type="radio" name="abn" id="abnYes" value="Yes" checked>
-                                <label class="form-check-label" for="abnYes">Yes</label>
-                            </div>
-                            <div class="form-check form-check-inline px-2">
-                                <input class="form-check-input" type="radio" name="abn" id="abnNo" value="No">
-                                <label class="form-check-label" for="abnNo">No</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row no-gutters pt-5">
-                        <div class="col-12 h8 fw-500 pb-3 text-dark">Financial Information</div>
-                        <div class="col-12 col-md-6 pr-md-2">
-                            <select name="employmentStatus" class="form-control border-0" required>
-                                <option disabled selected>Employment Status</option>
-                                <option>Self Employed</option>
-                                <option>Full Time</option>
-                                <option>Part Time</option>
-                                <option>Casual</option>
-                            </select>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
-                            <input class="form-control border-0" type="number" placeholder="Weekly Income ($)" name="weeklyIncome" required>
-                        </div>
-                        <div class="col-12 col-md-6 pr-md-2 mt-2 mt-md-3">
-                            <!-- <input class="form-control border-0" type="number" placeholder="Financial Amount Required ($)" name="amountRequired" required> -->
-                            <select name="amountRequired" class="form-control border-0" required>
-                                <option disabled selected>Financial Amount Required ($)</option>
-                                <option> $10,000-$19,000</option>
-                                <option>$20,000-$49,000</option>
-                                <option>$50,000-$74,999</option>
-                                <option>$75,000-$149,000</option>
-                                <option>$150,000+</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row no-gutters pt-5">
-                        <div class="col-12 h8 fw-500 pb-3 text-dark">Additional Information</div>
-                        <div class="col-12 col-md-6 pr-md-2 text-dark-grey">
-                            <div class="pb-2">What Best Suits You</div>
-                            <div class="form-check d-flex align-items-center py-2">
-                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits1" value="I have found my asset and looking for quotes" checked>
-                                <label class="form-check-label" for="bestSuits1">
-                                    I have found my asset and looking for quotes
-                                </label>
-                            </div>
-                            <div class="form-check d-flex align-items-center py-2">
-                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits2" value="Waiting on approval before I find my asset?">
-                                <label class="form-check-label" for="bestSuits2">
-                                    Waiting on approval before I find my asset?
-                                </label>
-                            </div>
-                            <div class="form-check d-flex align-items-center py-2">
-                                <input class="form-check-input" type="radio" name="bestSuits" id="bestSuits3" value="I've Been declined and looking for options?">
-                                <label class="form-check-label" for="bestSuits3">
-                                    I've Been declined and looking for options?
-                                </label>
-                            </div>
-                        </div>
-                        <div class="col-12 col-md-6 pl-md-2 mt-2 mt-md-0">
-                            <textarea name="message" class="form-control border-0 bg-off-gray" id="message" rows="6" placeholder="Comment (Optional)"></textarea>
-                        </div>
-                        <div class="col-12 mt-2 mt-md-4 mt-md-5">
-                            <button type="submit" class="btn btn-block btn-primary text-white form-control rounded-0 h9">
-                                Apply Now
-                            </button>
-                        </div>
-                    </div>
-            </div>
-            </form>
         </div>
-    </div>
     </div>
 </section>
 

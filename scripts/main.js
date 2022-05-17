@@ -24,7 +24,8 @@ $(() => {
       $(this).children(".plusminus").text('-');
     }
   });
-
+  AOS.refresh();
+  
   $(".banner").slick({
     arrows: false,
     dots: false,
