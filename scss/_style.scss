@@ -4,7 +4,8 @@
 
 header {
     position: relative;
-    background: radial-gradient(45.1% 90% at 71.38% 41.97%, $primary-light 0%, $primary 100%), radial-gradient(148.55% 70.21% at 50% 29.79%, $primary-light 0%, $primary 100%);
+    background: radial-gradient(45.1% 90% at 71.38% 41.97%, $primary-light 0%, $primary 100%),
+        radial-gradient(148.55% 70.21% at 50% 29.79%, $primary-light 0%, $primary 100%);
 
     .banner {
         .banner-slider-content {
@@ -36,26 +37,30 @@ header {
                 background: imgUrl("dozer-bg.webp") left center;
 
                 @include media-breakpoint-down(xl) {
-                    padding: 100px 0 95px;
+                    background-position: left top;
+                    padding: 170px 0 118px;
                 }
             }
 
             &.b2 {
                 background: imgUrl("crane-bg.webp") left center;
                 background-size: contain;
-                padding: 333.92px 0 46.16px;
+                padding: 333.92px 0 118.16px;
 
                 @include media-breakpoint-down(xl) {
-                    padding: 200px 0 0;
+                    background-position: left top;
+                    padding: 200px 0 160px;
                 }
             }
 
             &.b3 {
                 background: imgUrl("forklift-bg.webp") 10% center;
-                padding: 200px 0 180px;
-
+                padding: 200px 0 193px;
+                
                 @include media-breakpoint-down(xl) {
-                    padding: 100px 0 0;
+                    background-size: contain;
+                    background-position: 10% top;
+                    padding: 200px 0 153px;
                 }
             }
         }
@@ -116,7 +121,7 @@ header {
             font-size: 8rem; // 128px
 
             @include media-breakpoint-down(xl) {
-                font-size: 80px;
+                font-size: 7rem
             }
 
             @include media-breakpoint-down(sm) {

@@ -50,7 +50,7 @@ function watch() {
     });
     gulp.watch("./scss/**/*.scss", style);
     gulp.watch('./scripts/**/*.js', scripts);
-    gulp.watch("./images/**/*", imgSquash);
+    // gulp.watch("./images/**/*", imgSquash);
     gulp.watch('./app/**/*.php').on('change', browserSync.reload);
     gulp.watch("./app/assets/js/**/*.js").on('change', browserSync.reload);
 }

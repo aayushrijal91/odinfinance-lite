@@ -18,7 +18,7 @@
     font-size: 9rem; // 144px
 
     @include media-breakpoint-down(xl) {
-        font-size: 80px;
+        font-size: 7rem;
     }
 
     @include media-breakpoint-down(sm) {
@@ -30,7 +30,7 @@
     font-size: 8rem; // 128px
     
     @include media-breakpoint-down(xl) {
-        font-size: 100px;
+        font-size: 7rem;
     }
 
     @include media-breakpoint-down(sm) {

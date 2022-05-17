@@ -92,7 +92,7 @@
 			<div class="banner-slider-content b2">
 				<div class="container">
 					<div class="row justify-content-end">
-						<div class="col-xl-7 col-xxl-9">
+						<div class="col-xl-9 col-xxl-9">
 							<div class="text-center h3 fw-800 line-height-3 letter-spacing-1">Funding for up to $500,000 with just a bank statement</div>
 
 							<div class="row justify-content-center pt-5">
@@ -114,7 +114,7 @@
 			<div class="banner-slider-content b3">
 				<div class="container">
 					<div class="row justify-content-end">
-						<div class="col-xl-6 col-xxl-8">
+						<div class="col-xl-8 col-xxl-8">
 							<div class="text-center h3 fw-800 line-height-3 letter-spacing-1">Conditional Approvals Over The Phone!</div>
 
 							<div class="row justify-content-center pt-5">
