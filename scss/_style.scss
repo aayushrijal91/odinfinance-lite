@@ -33,7 +33,7 @@ header {
 
             &.b1 {
                 padding: 176.87px 0 118px;
-                background: imgUrl("dozer-bg.png") left center;
+                background: imgUrl("dozer-bg.webp") left center;
 
                 @include media-breakpoint-down(xl) {
                     padding: 100px 0 95px;
@@ -41,7 +41,7 @@ header {
             }
 
             &.b2 {
-                background: imgUrl("crane-bg.png") left center;
+                background: imgUrl("crane-bg.webp") left center;
                 background-size: contain;
                 padding: 333.92px 0 46.16px;
 
@@ -51,7 +51,7 @@ header {
             }
 
             &.b3 {
-                background: imgUrl("forklift-bg.png") 10% center;
+                background: imgUrl("forklift-bg.webp") 10% center;
                 padding: 200px 0 180px;
 
                 @include media-breakpoint-down(xl) {
@@ -214,15 +214,15 @@ section.cta {
             }
 
             &.ch1 {
-                background: imgUrl("s1.png", "lib") center;
+                background: imgUrl("s1.webp", "lib") center;
             }
 
             &.ch2 {
-                background: imgUrl("s2.png", "lib") center;
+                background: imgUrl("s2.webp", "lib") center;
             }
 
             &.ch3 {
-                background: imgUrl("s3.png", "lib") center;
+                background: imgUrl("s3.webp", "lib") center;
             }
         }
 
@@ -473,47 +473,47 @@ section.lenders {
             left: 7px;
             height: 306px;
             width: 385px;
-            background: imgUrl("odin-eftpos.png", "lib");
+            background: imgUrl("odin-eftpos.webp", "lib");
             transition: 0.2s ease-in-out;
 
             &.commbank {
-                background: imgUrl("commbank-eft.png", "lib");
+                background: imgUrl("commbank-eft.webp", "lib");
             }
 
             &.capitalfinance {
-                background: imgUrl("capitalfinance-eft.png", "lib");
+                background: imgUrl("capitalfinance-eft.webp", "lib");
             }
 
             &.westpac {
-                background: imgUrl("westpac-eft.png", "lib");
+                background: imgUrl("westpac-eft.webp", "lib");
             }
 
             &.peppermoney {
-                background: imgUrl("peppermoney-eft.png", "lib");
+                background: imgUrl("peppermoney-eft.webp", "lib");
             }
 
             &.plenti {
-                background: imgUrl("plenti-eft.png", "lib");
+                background: imgUrl("plenti-eft.webp", "lib");
             }
 
             &.scotpac {
-                background: imgUrl("scotpac-eft.png", "lib");
+                background: imgUrl("scotpac-eft.webp", "lib");
             }
 
             &.shift {
-                background: imgUrl("shift-eft.png", "lib");
+                background: imgUrl("shift-eft.webp", "lib");
             }
 
             &.flexicommercial {
-                background: imgUrl("flexicommercial-eft.png", "lib");
+                background: imgUrl("flexicommercial-eft.webp", "lib");
             }
 
             &.angleautofinance {
-                background: imgUrl("anglefinance-eft.png", "lib");
+                background: imgUrl("anglefinance-eft.webp", "lib");
             }
 
             &.grow {
-                background: imgUrl("grow-eft.png", "lib");
+                background: imgUrl("grow-eft.webp", "lib");
             }
         }
     }
@@ -752,7 +752,7 @@ section.testimonials {
 }
 
 section.learning {
-    background: imgUrl("learning.png") left top;
+    background: imgUrl("learning.webp") left top;
     padding: 300px 0 9px;
 
     @include media-breakpoint-up(xl) {
@@ -764,7 +764,7 @@ section.learning {
     }
 
     @include media-breakpoint-down(lg) {
-        background: imgUrl("learning-mobile.png") left top;
+        background: imgUrl("learning-mobile.webp") left top;
         padding: 130px 0 0 0;
     }
 
