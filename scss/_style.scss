@@ -29,6 +29,14 @@ header {
                         width: 6.93px;
                         height: 19.03px;
                     }
+
+                    @include media-breakpoint-down(sm) {
+                        font-size: 0.875rem; // 14px
+                    }
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding: 24px 0;
                 }
             }
 
@@ -39,6 +47,15 @@ header {
                 @include media-breakpoint-down(xl) {
                     background-position: left top;
                     padding: 170px 0 118px;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    background: none;
+                    padding: 100px 0 118px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding: 64px 0;
                 }
             }
 
@@ -51,16 +68,34 @@ header {
                     background-position: left top;
                     padding: 200px 0 160px;
                 }
+
+                @include media-breakpoint-down(lg) {
+                    background: none;
+                    padding: 100px 0 118px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding: 64px 0;
+                }
             }
 
             &.b3 {
                 background: imgUrl("forklift-bg.webp") 10% center;
                 padding: 200px 0 193px;
-                
+
                 @include media-breakpoint-down(xl) {
                     background-size: contain;
                     background-position: 10% top;
                     padding: 200px 0 153px;
+                }
+
+                @include media-breakpoint-down(lg) {
+                    background: none;
+                    padding: 100px 0 118px;
+                }
+
+                @include media-breakpoint-down(sm) {
+                    padding: 64px 0;
                 }
             }
         }
@@ -121,7 +156,15 @@ header {
             font-size: 8rem; // 128px
 
             @include media-breakpoint-down(xl) {
-                font-size: 7rem
+                font-size: 7rem;
+            }
+
+            @include media-breakpoint-down(lg) {
+                font-size: 6rem;
+            }
+
+            @include media-breakpoint-down(lg) {
+                font-size: 5rem;
             }
 
             @include media-breakpoint-down(sm) {
@@ -130,14 +173,21 @@ header {
         }
     }
 
-    @include media-breakpoint-down(lg) {
-        display: none;
-    }
-
     .interest {
         position: absolute;
         bottom: 3rem;
         left: 216px;
+
+        @include media-breakpoint-down(lg) {
+            bottom: 1rem;
+            left: 1rem;
+        }
+
+        @include media-breakpoint-down(sm) {
+            img {
+                max-width: 70%;
+            }
+        }
     }
 }
 

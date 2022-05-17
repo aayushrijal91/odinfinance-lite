@@ -32,7 +32,7 @@
 							<?= renderImg("logo.png", "logo") ?>
 						</a>
 					</div>
-					<div class="col-auto d-none d-lg-block">
+					<div class="col-auto d-none d-xl-block">
 						<div class="row font-inter">
 							<div class="col-auto">
 								<a href="#about" class="btn text-white">About Us</a>
@@ -75,12 +75,12 @@
 
 							<div class="row justify-content-center">
 								<div class="col-auto">
-									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Apply Now
 									</a>
 								</div>
 								<div class="col-auto">
-									<a href="#form" class="btn bordered border-white rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="#form" class="btn bordered border-white rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Contact Us
 									</a>
 								</div>
@@ -88,21 +88,22 @@
 						</div>
 					</div>
 				</div>
+				<?= renderImg("dozer-bg.png","background", "pt-5 d-lg-none") ?>
 			</div>
 			<div class="banner-slider-content b2">
 				<div class="container">
-					<div class="row justify-content-end">
-						<div class="col-xl-9 col-xxl-9">
+					<div class="row justify-content-center justify-content-xl-end">
+						<div class="col-lg-9 col-xl-9">
 							<div class="text-center h3 fw-800 line-height-3 letter-spacing-1">Funding for up to $500,000 with just a bank statement</div>
 
-							<div class="row justify-content-center pt-5">
+							<div class="row justify-content-center pt-4 pt-md-5">
 								<div class="col-auto">
-									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Apply Now
 									</a>
 								</div>
 								<div class="col-auto">
-									<a href="tel: <?= $phone_number ?>" class="btn bordered border-white rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="tel: <?= $phone_number ?>" class="btn bordered border-white rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Contact Us
 									</a>
 								</div>
@@ -110,21 +111,22 @@
 						</div>
 					</div>
 				</div>
+				<?= renderImg("crane-bg.png","background", "pt-5 d-lg-none") ?>
 			</div>
 			<div class="banner-slider-content b3">
 				<div class="container">
-					<div class="row justify-content-end">
-						<div class="col-xl-8 col-xxl-8">
+					<div class="row justify-content-center justify-content-xl-end">
+						<div class="col-lg-9 col-xl-8">
 							<div class="text-center h3 fw-800 line-height-3 letter-spacing-1">Conditional Approvals Over The Phone!</div>
 
-							<div class="row justify-content-center pt-5">
+							<div class="row justify-content-center pt-4 pt-md-5">
 								<div class="col-auto">
-									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="#form" class="btn btn-tertiary bordered border-tertiary rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Apply Now
 									</a>
 								</div>
 								<div class="col-auto">
-									<a href="#form" class="btn bordered border-white rounded-pill text-white py-3 px-md-5 h9 fw-700">
+									<a href="#form" class="btn bordered border-white rounded-pill text-white py-2 py-md-3 px-md-5 h9 fw-700">
 										Contact Us
 									</a>
 								</div>
@@ -132,6 +134,7 @@
 						</div>
 					</div>
 				</div>
+				<?= renderImg("forklift-bg.png","background", "pt-5 d-lg-none") ?>
 			</div>
 		</div>
 

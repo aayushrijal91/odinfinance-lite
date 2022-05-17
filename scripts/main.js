@@ -29,11 +29,11 @@ $(() => {
     arrows: false,
     dots: false,
     infinite: true,
-    // speed: 1000,
+    speed: 1000,
     slidesToShow: 1,
-    // autoplay: true,
-    // fade: true,
-    // autoplaySpeed: 3300,
+    autoplay: true,
+    fade: true,
+    autoplaySpeed: 3300,
   });
 
   AOS.refresh();
