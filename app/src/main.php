@@ -917,7 +917,7 @@ include __DIR__ . '/header.php';
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-12 d-xl-none">
+            <div class="col-12 d-xl-none pb-5">
                 <div class="text-center text-primary-sub h3 fw-800 line-height-3 letter-spacing-1" data-aos="fade-right">
                     <span class="text-primary">Enquire</span> With Us Today
                 </div>
